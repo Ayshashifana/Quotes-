@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(30, 64, 64);
+    font-family: 'Roboto', sans-serif
+}
+.box{
+    width: 600px;
+   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    padding: 20px;
+    transform: translate(-50%,-50%);
+    /* border: 2px solid rgb(9, 9, 9); */
+    box-shadow: 3px 3px 5px rgb(168, 174, 174);
+    border-radius: 10px;
+    background-color:#F7C04A;
+    
+    
+}
+.box h2{
+    font-size: 30px;
+    color: #3F497F;
+    margin-bottom: 30px;
+    position: relative;
+}
+.box h2::after{
+    content: "";
+    width:70px;
+    height: 2px;
+    background-color: darkolivegreen;
+    border-radius: 3px;
+position:absolute;
+left: 50%;
+bottom:-5px;
+transform: translate(-50%,50%);
+}
+.box blockquote{
+    font-size: 20px;
+}
+.box blockquote::before,.box blockquote::after{
+    content: '"';
+}
+.box span{
+    display: block;
+    float: right;
+    font-size: 16px;
+    position: relative;
+}
+.box span::before{
+    content: "";
+    height: 1px;
+    width:10px;
+    background-color: darkslategray;
+    border: 1px;
+    position: absolute;
+    top: 50%;
+    left:-20px;
+}
+.butt{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-top: 20px;
+   width: 100%;
+   
+}
+.butt button{
+    margin: 5px;
+    background-color: #3F497F;
+    color: #F8F5E4;
+}
+.box i{
+    padding: 0 5px;
+}
